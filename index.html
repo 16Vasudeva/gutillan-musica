@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Gutillán Música | Cursos de música</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Gutillán Música: cursos de música en vivo, tutorías personalizadas, ebooks y recursos para aprender desde cero a avanzado.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<!-- Header fijo: contiene el nombre de la plataforma y el menú principal del sitio. -->
+<header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- La marca lleva al inicio. El span permite colorear una parte del nombre. -->
+            <a class="navbar-brand" href="index.html">Gutillán <span>Música</span></a>
+
+            <!-- Este botón aparece en celular para desplegar el menú. Bootstrap lo activa automáticamente. -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Enlaces principales. Cada página tiene su archivo HTML. -->
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cursos.html">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tutorias.html">Tutorías</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ebooks.html">Ebooks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productosrecomendados.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobrenosotros.html">Sobre nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bibliotecadigital.html">Biblioteca</a></li>
+                    <li class="nav-item"><a class="btn-gutillan-primary ms-lg-2" href="contacto.html">Reservar clase</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Hero principal: primera sección visible. Usa un carrusel de Bootstrap para mostrar varios banners. -->
+    <section class="hero-section" id="hero">
+        <div class="container">
+            <div id="heroCarrusel" class="carousel slide hero-card" data-bs-ride="carousel">
+                <!-- Indicadores del carrusel: los puntitos para saber en qué slide estás. -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Curso principal"></button>
+                    <button type="button" data-bs-target="#heroCarrusel" data-bs-slide-to="1" aria-label="Tutorías"></button>
+                    <button type="button" data-bs-target="#heroCarrusel" data-bs-slide-to="2" aria-label="Ebook gratuito"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- Slide 1: banner del curso principal. -->
+                    <div class="carousel-item active">
+                        <div class="hero-slide-content">
+                            <span class="hero-badge">Próximo curso en vivo</span>
+                            <h1>Gutillán Música <span class="hero-title-divider">| Cursos de música |</span></h1>
+                            <p class="lead mt-4">Aprende música con cursos en vivo, grabaciones de clase y acompañamiento cercano para avanzar desde cero a avanzado.</p>
+                            <div class="hero-price">Composición para principiantes con MuseScore · Desde $200 MXN</div>
+                            <div class="d-flex flex-wrap gap-2">
+                                <a href="cursos.html#curso-composicion" class="botonPrincipal">Inscribirme al próximo curso</a>
+                                <a href="contacto.html" class="botonSecundario">Pedir informes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2: banner para tutorías personalizadas. -->
+                    <div class="carousel-item">
+                        <div class="hero-slide-content">
+                            <span class="hero-badge">Tutorías online</span>
+                            <h2>Clases personalizadas para avanzar con guía real</h2>
+                            <p class="lead mt-4">Tutorías de instrumentos, entrenamiento auditivo, teoría musical, composición, preparación para exámenes y producción musical.</p>
+                            <div class="hero-price">Planes desde $1,000 MXN al mes · 4 clases online</div>
+                            <div class="d-flex flex-wrap gap-2">
+                                <a href="tutorias.html" class="botonPrincipal">Reservar tutoría</a>
+                                <a href="contacto.html" class="botonSecundario">Solicitar un plan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3: banner para captar leads con el ebook. -->
+                    <div class="carousel-item">
+                        <div class="hero-slide-content">
+                            <span class="hero-badge">Recurso gratuito</span>
+                            <h2>Descarga la guía para estudiar mejor tu instrumento</h2>
+                            <p class="lead mt-4">Organiza tu práctica, evita frustraciones, reduce errores comunes y construye conocimiento musical duradero.</p>
+                            <div class="hero-price">Primer ebook gratuito de la plataforma</div>
+                            <div class="d-flex flex-wrap gap-2">
+                                <a href="ebooks.html#formulario-ebook" class="botonPrincipal">Descargar ebook</a>
+                                <a href="cursos.html" class="botonSecundario">Ver cursos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controles laterales del carrusel. -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarrusel" data-bs-slide="prev" aria-label="Slide anterior"><span class="carousel-control-prev-icon" aria-hidden="true"></span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarrusel" data-bs-slide="next" aria-label="Slide siguiente"><span class="carousel-control-next-icon" aria-hidden="true"></span></button>
+            </div>
+            <!-- Tarjetas pequeñas debajo del hero para resumir la propuesta de valor. -->
+            <div class="row g-4 mt-4">
+                <div class="col-md-4"><article class="metric-card"><strong>En vivo</strong><p class="mb-0">Cursos online con interacción y acceso posterior a grabaciones.</p></article></div>
+                <div class="col-md-4"><article class="metric-card"><strong>Flexible</strong><p class="mb-0">Rutas para principiantes, estudiantes intermedios y músicos avanzados.</p></article></div>
+                <div class="col-md-4"><article class="metric-card"><strong>Accesible</strong><p class="mb-0">Primeros cursos con precios de lanzamiento para abrir comunidad.</p></article></div>
+            </div>
+        </div>
+    </section>
+    <!-- Cursos destacados: muestra la oferta educativa inicial. -->
+    <section id="cursosDestacados"><div class="container"><div class="text-center section-intro"><span class="section-kicker">Cursos</span><h2>Empieza por una ruta clara</h2><p>La plataforma inicia con cursos accesibles, prácticos y enfocados en que el estudiante avance con estructura.</p></div><div class="row g-4"><div class="col-lg-6"><article class="card-moderna h-100"><div class="icono-circular">🎼</div><span class="badge-soft mb-3">Próximamente</span><h3>Composición para principiantes con MuseScore</h3><p>Aprende a crear tus primeras ideas musicales, escribirlas en partitura y entender los fundamentos de la composición desde una perspectiva práctica.</p><p><strong>Modalidad:</strong> en vivo online + grabaciones.</p><p><strong>Precio de lanzamiento:</strong> entre $200 y $400 MXN.</p><a href="cursos.html#curso-composicion" class="botonPrincipal">Ver información del curso</a></article></div><div class="col-lg-6"><div class="row g-4"><div class="col-md-6"><article class="card-moderna"><div class="icono-circular">🎹</div><h3>Piano desde cero</h3><p>Ruta inicial para aprender técnica, lectura y práctica musical desde la base.</p><a href="cursos.html" class="fw-bold">Ver próximo curso</a></article></div><div class="col-md-6"><article class="card-moderna"><div class="icono-circular">🎸</div><h3>Guitarra desde cero</h3><p>Curso pensado para construir bases claras de ritmo, acordes y lectura.</p><a href="cursos.html" class="fw-bold">Ver próximo curso</a></article></div><div class="col-md-12"><article class="card-moderna"><div class="icono-circular">🧠</div><h3>Análisis musical para principiantes</h3><p>Aprende a entender cómo está construida la música que tocas, escuchas o quieres crear.</p><a href="cursos.html" class="fw-bold">Ver próximo curso</a></article></div></div></div></div></div></section>
+    <!-- Curso principal: sección de venta del primer curso. -->
+    <section id="cursoPrincipal" class="bg-suave"><div class="container"><div class="card-destacada"><div class="row align-items-center g-5"><div class="col-lg-7"><span class="hero-badge">Curso principal de lanzamiento</span><h2>Composición para principiantes con MuseScore</h2><p class="lead">Un curso en vivo para aprender a transformar ideas musicales en partituras, conocer herramientas básicas de composición y usar MuseScore como espacio creativo.</p><ul class="lista-limpia mt-4"><li>Clases en vivo online.</li><li>Acceso a grabaciones después de cada clase.</li><li>Enfoque práctico para principiantes.</li><li>Precio accesible de lanzamiento.</li></ul></div><div class="col-lg-5"><div class="formulario-card text-dark"><h3>Quiero recibir informes</h3><p>Déjanos tus datos y te contactaremos cuando se abra el grupo.</p><!-- Formulario visual: después podrás conectarlo a Google Sheets, Forms o una herramienta de email marketing. --><form><div class="mb-3"><label for="nombreCurso" class="form-label">Nombre</label><input type="text" class="form-control" id="nombreCurso" placeholder="Tu nombre"></div><div class="mb-3"><label for="emailCurso" class="form-label">Email</label><input type="email" class="form-control" id="emailCurso" placeholder="tu@email.com"></div><div class="mb-3"><label for="mensajeCurso" class="form-label">¿Qué te gustaría aprender?</label><textarea class="form-control" id="mensajeCurso" rows="3" placeholder="Cuéntanos brevemente"></textarea></div><button type="submit" class="botonPrincipal w-100">Inscribirme / pedir informes</button></form></div></div></div></div></div></section>
+    <!-- Tutorías: sección resumida que manda a la página completa de tutorías. -->
+    <section id="tutoriasPersonalizadas"><div class="container"><div class="text-center section-intro"><span class="section-kicker">Tutorías</span><h2>Clases personalizadas por instrumento o área musical</h2><p>Planes mensuales online con maestros especializados para quienes buscan atención individual.</p></div><div class="row g-4"><div class="col-md-6 col-lg-3"><article class="card-moderna text-center"><div class="icono-circular mx-auto">🎹</div><h3>Instrumentos</h3><p>Piano, guitarra, canto, cuerdas, alientos, batería y más.</p></article></div><div class="col-md-6 col-lg-3"><article class="card-moderna text-center"><div class="icono-circular mx-auto">🎧</div><h3>Entrenamiento y teoría</h3><p>Entrenamiento auditivo, teoría musical, solfeo y análisis.</p></article></div><div class="col-md-6 col-lg-3"><article class="card-moderna text-center"><div class="icono-circular mx-auto">✍️</div><h3>Composición</h3><p>Creación musical, preparación de exámenes y escritura.</p></article></div><div class="col-md-6 col-lg-3"><article class="card-moderna text-center"><div class="icono-circular mx-auto">🎚️</div><h3>Producción musical</h3><p>Mezcla, master y creación de canciones desde cero.</p></article></div></div><div class="text-center mt-4"><p><strong>Planes desde $1,000 MXN al mes:</strong> 4 clases online de una hora.</p><a href="tutorias.html" class="botonPrincipal">Reservar tutoría</a></div></div></section>
+    <!-- Ebooks: captación de leads con recursos gratuitos. -->
+    <section id="guiaGratis" class="bg-suave"><div class="container"><div class="row align-items-center g-5"><div class="col-lg-6"><span class="section-kicker">Ebook gratuito</span><h2>Guía práctica para estudiar mejor tu instrumento</h2><p>Un recurso para músicos principiantes que quieren practicar mejor, evitar frustración, organizar su sesión de estudio y construir conocimiento duradero.</p><a href="ebooks.html#formulario-ebook" class="botonPrincipal">Descargar guía gratis</a></div><div class="col-lg-6"><article class="card-moderna"><div class="placeholder-img mb-4">📘</div><h3>¿Qué encontrarás?</h3><ul class="lista-limpia"><li>Cómo organizar una sesión de práctica.</li><li>Errores comunes al estudiar música.</li><li>Consejos para avanzar con menos frustración.</li><li>Preguntas para descubrir qué curso necesitas.</li></ul></article></div></div></div></section>
+    <!-- Productos recomendados: sección breve que manda a la página de afiliados. -->
+    <section id="productosRecomendados"><div class="container"><div class="text-center section-intro"><span class="section-kicker">Productos recomendados</span><h2>Herramientas útiles para estudiar música</h2><p>Libros, teclados, audífonos, interfaces, software, atriles, cuerdas y accesorios seleccionados para estudiantes.</p></div><div class="row g-4"><div class="col-md-4"><article class="card-moderna text-center"><div class="icono-circular mx-auto">🎹</div><h3>Instrumentos y accesorios</h3><p>Opciones prácticas para estudiar en casa.</p></article></div><div class="col-md-4"><article class="card-moderna text-center"><div class="icono-circular mx-auto">🎧</div><h3>Audio y producción</h3><p>Herramientas para escuchar, grabar y crear.</p></article></div><div class="col-md-4"><article class="card-moderna text-center"><div class="icono-circular mx-auto">📚</div><h3>Libros y materiales</h3><p>Recursos para acompañar tu aprendizaje.</p></article></div></div><div class="text-center mt-4"><a href="productosrecomendados.html" class="botonSecundario">Ver productos recomendados</a></div></div></section>
+    <!-- Biblioteca digital: sección de expectativa para una función futura. -->
+    <section id="bibliotecaDigital" class="bg-suave"><div class="container"><div class="card-moderna text-center"><span class="section-kicker">Próximamente</span><h2>Biblioteca digital para alumnos inscritos</h2><p class="section-intro mb-4">Más adelante, los alumnos podrán acceder a grabaciones, materiales de clase, partituras, ejercicios y recursos complementarios.</p><a href="bibliotecadigital.html" class="botonSecundario">Conocer la idea</a></div></div></section>
+    <!-- Sobre la escuela: misión, visión y perfil breve. -->
+    <section id="sobreGutillan"><div class="container"><div class="row align-items-start g-5"><div class="col-lg-5"><span class="section-kicker">Sobre la escuela</span><h2>Educación musical accesible, cercana y de calidad</h2><p>Gutillán Música nace para acercar la formación musical a más personas, combinando cursos accesibles, tutorías personalizadas y una pedagogía clara para estudiantes de distintos niveles.</p><a href="sobrenosotros.html" class="botonSecundario">Leer más</a></div><div class="col-lg-7"><div class="row g-4"><div class="col-md-4"><article class="card-moderna"><h3>Misión</h3><p>Crear cursos de música accesibles y bien estructurados para todas y todos.</p></article></div><div class="col-md-4"><article class="card-moderna"><h3>Visión</h3><p>Construir una escuela digital con comunidad, acompañamiento y recursos de calidad.</p></article></div><div class="col-md-4"><article class="card-moderna"><h3>Valores</h3><p>Claridad, creatividad, inclusión, disciplina flexible y excelencia pedagógica.</p></article></div></div></div></div></div></section>
+    <!-- Llamado final: última invitación antes del footer. -->
+    <section id="llamadoFinal"><div class="container"><div class="cta-final text-center"><h2>Empieza tu ruta musical con Gutillán Música</h2><p class="lead mx-auto" style="max-width:760px;">Inscríbete al próximo curso, reserva una tutoría o descarga el primer ebook gratuito para comenzar con una ruta más clara.</p><div class="d-flex flex-wrap justify-content-center gap-2 mt-4"><a href="cursos.html#curso-composicion" class="botonPrincipal">Inscribirme al curso</a><a href="contacto.html" class="botonSecundario">Reservar clase</a><a href="ebooks.html#formulario-ebook" class="botonSecundario">Descargar ebook</a></div></div></div></section>
+
+</main>
+
+<!-- Footer: cierre del sitio con enlaces rápidos y datos de contacto. -->
+<footer>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-5">
+                <h3>Gutillán Música</h3>
+                <p>Una plataforma de cursos, tutorías y recursos para aprender música con claridad, acompañamiento y calidad profesional.</p>
+            </div>
+            <div class="col-md-4 col-lg-2">
+                <h4>Explora</h4>
+                <ul class="footer-list">
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="tutorias.html">Tutorías</a></li>
+                    <li><a href="ebooks.html">Ebooks</a></li>
+                    <li><a href="productosrecomendados.html">Productos</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-lg-2">
+                <h4>Escuela</h4>
+                <ul class="footer-list">
+                    <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+                    <li><a href="bibliotecadigital.html">Biblioteca digital</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <h4>Contacto</h4>
+                <p>Escríbenos para informes, cursos, tutorías o propuestas de colaboración.</p>
+                <a class="btn-gutillan-outline bg-white" href="contacto.html">Pedir informes</a>
+            </div>
+        </div>
+        <hr class="border-light opacity-25 my-4">
+        <p class="mb-0 small">© 2026 Gutillán Música. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
